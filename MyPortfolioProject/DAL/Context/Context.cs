@@ -12,5 +12,7 @@ namespace MyPortfolioProject.DAL.Context
         public DbSet<About> Abouts { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Project> Projects { get; set; }
     }
 }

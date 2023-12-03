@@ -135,6 +135,8 @@
     <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="DAL\Context\Context.cs" />
     <Compile Include="DAL\Entities\About.cs" />
+    <Compile Include="DAL\Entities\Category.cs" />
+    <Compile Include="DAL\Entities\Project.cs" />
     <Compile Include="DAL\Entities\Service.cs" />
     <Compile Include="DAL\Entities\Testimonial.cs" />
     <Compile Include="Global.asax.cs">
@@ -143,6 +145,10 @@
     <Compile Include="Migrations\202312031737026_mig_add_testimonial.cs" />
     <Compile Include="Migrations\202312031737026_mig_add_testimonial.designer.cs">
       <DependentUpon>202312031737026_mig_add_testimonial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312031828335_mig_add_projectandcategory.cs" />
+    <Compile Include="Migrations\202312031828335_mig_add_projectandcategory.designer.cs">
+      <DependentUpon>202312031828335_mig_add_projectandcategory.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -370,6 +376,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202312031737026_mig_add_testimonial.resx">
       <DependentUpon>202312031737026_mig_add_testimonial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202312031828335_mig_add_projectandcategory.resx">
+      <DependentUpon>202312031828335_mig_add_projectandcategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
