@@ -1,0 +1,29 @@
+﻿@model List<MyPortfolioProject.DAL.Entities.Project>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Projelerim Sayfası</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>#</th>
+        <th>Proje Adı</th>
+       
+        <th>Sil</th>
+        <th>Güncelle</th>
+        <th>Githubda Gör</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProjectID</td>
+            <td>@item.Title</td>            
+            <td><a href="/Project/DeleteProject/@item.ProjectID" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Project/UpdateProject/@item.ProjectID" class="btn btn-outline-success">Güncelle</a></td>
+            <td><a href="#" class="btn btn-outline-info">Github</a></td>
+        </tr>
+    }
+</table>
+

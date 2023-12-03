@@ -7,13 +7,13 @@ namespace MyPortfolioProject.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class mig_add_projectandcategory : IMigrationMetadata
+    public sealed partial class add_mig_1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(mig_add_projectandcategory));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(add_mig_1));
         
         string IMigrationMetadata.Id
         {
-            get { return "202312031828335_mig_add_projectandcategory"; }
+            get { return "202312031840279_add_mig_1"; }
         }
         
         string IMigrationMetadata.Source
