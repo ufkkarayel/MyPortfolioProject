@@ -36,5 +36,23 @@ namespace MyPortfolioProject.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public ActionResult UpdateTestimonial(int id)
+        {
+            var value = db.Testimonials.Find(id);
+            return View(value);
+
+        }
+        [HttpPost]
+        public ActionResult UpdateTestimonial(Testimonial testimonial)
+        {
+            var value = db.Testimonials.Find(testimonial.TestimonialID);
+            value.Name = testimonial.Name;
+            value.ImageUrl = testimonial.ImageUrl;
+            value.Title = testimonial.Title;
+            value.Comment = testimonial.Comment;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
