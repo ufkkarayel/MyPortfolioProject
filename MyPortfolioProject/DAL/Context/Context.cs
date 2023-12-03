@@ -7,9 +7,10 @@ using System.Web;
 
 namespace MyPortfolioProject.DAL.Context
 {
-    public class Context : DbContext
+    public class Context : System.Data.Entity.DbContext
     {
         public DbSet<About> Abouts { get; set; }
         public DbSet<Service> Services { get; set; }
+        public DbSet<Testimonial> Testimonials { get; set; }
     }
 }

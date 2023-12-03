@@ -136,8 +136,13 @@
     <Compile Include="DAL\Context\Context.cs" />
     <Compile Include="DAL\Entities\About.cs" />
     <Compile Include="DAL\Entities\Service.cs" />
+    <Compile Include="DAL\Entities\Testimonial.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202312031737026_mig_add_testimonial.cs" />
+    <Compile Include="Migrations\202312031737026_mig_add_testimonial.designer.cs">
+      <DependentUpon>202312031737026_mig_add_testimonial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -342,6 +347,7 @@
     <Content Include="Views\Service\Index.cshtml" />
     <Content Include="Views\Service\AddService.cshtml" />
     <Content Include="Views\Testimonial\AddTestimonial.cshtml" />
+    <Content Include="Views\Testimonial\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -359,6 +365,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202312031737026_mig_add_testimonial.resx">
+      <DependentUpon>202312031737026_mig_add_testimonial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
